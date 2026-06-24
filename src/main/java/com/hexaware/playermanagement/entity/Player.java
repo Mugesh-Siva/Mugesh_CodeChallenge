@@ -1,5 +1,6 @@
 package com.hexaware.playermanagement.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,11 +18,12 @@ public class Player {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int playerId;
 	private String playerName;
+	@Column(unique = true)
 	private int jerseyNumber;
 	private String role;
 	private int totalMatches;
 	private String teamName;
-	private String countryOrStateName;
+	private String country;
 	private String description;
 	
 	

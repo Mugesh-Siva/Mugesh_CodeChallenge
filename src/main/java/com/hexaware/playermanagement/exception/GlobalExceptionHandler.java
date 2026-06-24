@@ -16,7 +16,7 @@ public class GlobalExceptionHandler {
     
 
     @ExceptionHandler(Exception.class)
-    @ResponseStatus(reason = "An unexpected error occurred", code = HttpStatus.INTERNAL_SERVER_ERROR)
+    @ResponseStatus(reason = "Bad Request", code = HttpStatus.BAD_REQUEST)
     public void handleGenericException() {
     }
 }

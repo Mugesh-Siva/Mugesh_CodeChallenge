@@ -24,7 +24,7 @@ public class PlayerServiceImp implements IPlayerService{
 		player.setRole(dto.getRole());
 		player.setTotalMatches(dto.getTotalMatches());
 		player.setTeamName(dto.getTeamName());
-		player.setCountryOrStateName(dto.getCountryOrStateName());
+		player.setCountry(dto.getCountry());
 		player.setDescription(dto.getDescription());
 		return repo.save(player);
 		
@@ -40,7 +40,7 @@ public class PlayerServiceImp implements IPlayerService{
 	    player.setRole(dto.getRole());
 	    player.setTotalMatches(dto.getTotalMatches());
 	    player.setTeamName(dto.getTeamName());
-	    player.setCountryOrStateName(dto.getCountryOrStateName());
+	    player.setCountry(dto.getCountry());
 	    player.setDescription(dto.getDescription());
 
 	    return repo.save(player);
